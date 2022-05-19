@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+			<title>Calculator</title>
+			<meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+			<link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+			<link href="fa/css/all.css" type="text/css" rel="stylesheet">
+
+			<style>
+					#screen{
+								height :60px;
+								/*border: 2px solid green;*/
+								font-size:20px;
+								text-align: right;
+
+					}
+
+					#screenn{
+								height :40px;
+								/*border: 2px solid blue;*/
+								text-align: right;
+								color: orange;
+					}
+
+
+					.buttons{
+
+							height:  50px;
+
+					}
+
+
+					/*div{
+
+						box-sizing:border-box;
+						border: 2px solid white;
+
+					}*/
+
+
+					#maindiv{
+
+						background-color: #243441;
+						border-radius: 25px;
+						box-shadow: 2px 2px 2px 2px rgba(10,10,10,0.2);
+						min-height:500px;
+					}
+
+					body{
+
+						background-color: #FEB077;
+					}
+
+					.ordbtn{
+						color: white;
+						width: 100%;
+						box-shadow: 2px 2px 2px 2px rgba(155,164,158,0.1);
+						margin-top: 2px;
+					}
+
+					.ordbtt{
+
+						width:100%;
+						background-color: orange;
+						margin-top: 2px;
+						box-shadow: 2px 2px 2px 2px rgba(155,164,158,0.1);
+					}
+
+
+					@media only screen and (max-width: 800px){
+
+
+						#maindiv{
+							margin-right: 0.1rem;
+							width: 84%;
+						}
+
+
+
+
+					}
+
+
+					
+
+			</style>
+	</head>
+
+
+	<body>
+
+			<div class="row">
+				
+
+					<div class="col siders"></div>
+
+
+
+					<div class="col-md-4 mt-5 ma" id="maindiv">
+						
+
+						<!-- first row -->
+
+							<div class="row">
+						<div class="col screener">
+
+							<div class="row">
+								<div class="col mt-4" id="screenn">
+
+
+										
+
+
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col mt-2" id="screen" style="color:white">
+
+
+										
+
+
+								</div>
+							</div>
+						</div>
+							</div>
+
+						<!-- second row -->
+							<div class="row">
+								<div class="col mt-3 mx-2 buttons">
+									
+								<div class="row">
+									<div class="col">
+										<button class="btn ordbtn" style="color:orange;" data-allclear>AC</button>
+									</div>
+
+									<div class="col">
+										<button class="btn ordbtn" style="color:orange;" data-delete>DEL</button>
+									</div>
+
+									<div class="col">
+										<button class="btn ordbtn" style="color:orange;" >(</button>
+									</div>
+
+									<div class="col">
+										<button class="btn ordbtn" style="color:orange;" >)</button>
+									</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<!-- third row -->
+							<div class="row">
+								<div class="col mt-3 mx-2 buttons">
+								<div class="row">
+									<div class="col">
+										<button class="btn ordbtn" id="seven" data-number>7</button>
+									</div>
+
+									<div class="col">
+										<button class="btn ordbtn" id="eight" data-number>8</button>
+									</div>
+
+									<div class="col">
+										<button class="btn ordbtn" id="nine" data-number>9</button>
+									</div>
+
+									<div class="col">
+										<button class="btn ordbtn" style="color:orange;" data-operation><!-- <i class="fas fa-multiply"></i> -->*</button>
+									</div>
+
+									</div>
+								</div>
+
+							</div>
+
+
+							<!-- fourth row -->
+							<div class="row">
+								<div class="col mt-3 mx-2  buttons">
+								<div class="row">
+									<div class="col">
+										<button class="btn ordbtn" data-number>4</button>
+									</div>
+
+
+									<div class="col">
+										<button class="btn ordbtn" data-number>5</button>
+									</div>
+
+									<div class="col">
+										<button class="btn ordbtn" data-number>6</button>
+									</div>
+
+									<div class="col">
+										<button class="btn ordbtn" style="color:orange;" data-operation><!-- <i class="fas fa-minus"></i> -->-</button>
+									</div>
+
+									</div>
+								</div>
+
+							</div>
+
+
+							<!-- fifth row -->
+							<div class="row">
+								<div class="col mt-3 mx-2  buttons">
+								<div class="row">
+									<div class="col">
+										<button class="btn ordbtn" data-number>1</button>
+									</div>
+
+									<div class="col">
+										<button class="btn ordbtn" data-number>2</button>
+									</div>
+
+									<div class="col">
+										<button class="btn ordbtn" data-number>3</button>
+									</div>
+
+									<div class="col">
+										<button class="btn ordbtn" style="color:orange;" data-operation><!-- <i class="fas fa-plus"></i> -->+</button>
+									</div>
+									</div>
+								</div>
+
+							</div>
+
+
+							<!-- sixth row -->
+							<div class="row">
+								<div class="col my-3 mx-2 buttons">
+									
+									<div class="row">
+
+									<div class="col">
+										<button class="btn ordbtt">=</button>
+									</div>
+
+									<div class="col">
+										<button class="btn ordbtn" data-operation>0</button>
+									</div>
+
+									<div class="col">
+										<button class="btn ordbtn" data-operation>.</button>
+									</div>
+
+									<div class="col">
+										<button class="btn ordbtn" style="color:orange;" >/</button>
+									</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+
+
+					</div>
+
+
+					<div class="col siders"></div>
+			</div>
+
+			
+
+			<script type="text/javascript" language="javascript">
+
+
+				// var name="munachi";
+				// var reall=Array.from(name);
+				// var newbo=reall.map(x=>{
+				// 	return x+'jesus';
+				// })
+				// console.log(newbo);
+
+
+					var screenn=document.getElementById("screenn");
+					var screen=document.getElementById("screen");
+					var buttons=Array.from(document.getElementsByClassName("btn"));
+
+					buttons.map(btnn=>{
+							btnn.addEventListener('click',(e)=>{
+									// console.log('clicked');
+									// console.log(e);
+									// console.log(e.target);
+									// console.log(e.target.innerText);
+
+
+									switch(e.target.innerText){
+
+											case 'AC':
+											screen.innerText='';
+											screenn.innerText='';
+											break;
+
+											case'DEL':
+											if(screen.innerText){
+											screen.innerText=screen.innerText.slice(0,-1);
+											}
+											break;
+
+											case'=':
+											try{
+												screenn.innerText=eval(screen.innerText);
+											}catch{
+												screen.innerText="ERROR!";
+											}
+											break;
+
+											default:
+											screen.innerText += e.target.innerText;
+
+									}
+
+									
+
+							});
+
+					});
+					
+
+				
+				
+
+			</script>
+	</body>
+
+</html>
